@@ -26,12 +26,6 @@ impl Apt {
             }
         }
     }
-
-    pub fn set_chainloader(&self, program_id: u64, media_type: u8) {
-        unsafe {
-            ctru_sys::aptSetChainloader(program_id, media_type);
-        }
-    }
 }
 
 impl Drop for Apt {
